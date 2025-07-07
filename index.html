@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento -->
+<html lang="pt-BR">
+  <!-- Elemento raiz com definição de idioma -->
+  <head>
+    <!-- Cabeçalho do documento (metadados) -->
+    <meta charset="UTF-8" />
+    <!-- Codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configuração de viewport para responsividade -->
+    <title>Diário de Atividades</title>
+    <!-- Título da página -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Arquivo CSS local -->
+    <!-- Fontes do Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ícones Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Corpo do documento -->
+
+    <!-- Cabeçalho principal -->
+    <header class="main-header">
+      <div class="header-content">
+        <h1><i class="fas fa-book"></i> Meu Diário de Atividades</h1>
+        <!-- Título com ícone -->
+        <p>Registros diário de atividades</p>
+        <!-- Subtítulo -->
+      </div>
+      <!-- Navegação principal -->
+      <nav class="main-nav">
+        <a href="#" class="nav-link"><i class="fas fa-home"></i> Início</a>
+        <a href="#" class="nav-link"><i class="fas fa-archive"></i> Arquivo</a>
+        <a href="sobre.html" class="nav-link"
+          ><i class="fas fa-user"></i> Sobre</a
+        >
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal - Entradas do diário (ORDENADAS DO MAIS RECENTE PARA O MAIS ANTIGO) -->
+    <main class="journal-container">
+      <!-- Entrada 07/07 -->
+      <article class="journal-entry">
+        <header class="entry-header">
+          <div class="entry-date">
+            <span class="date-day">07</span>
+            <span class="date-month">JUL</span>
+            <span class="date-year">2025</span>
+          </div>
+          <div class="entry-title">
+            <h2>Reflexões Matinais</h2>
+            <div class="entry-meta">
+              <span><i class="fas fa-map-marker-alt"></i> New Week </span>
+              <span><i class="fas fa-clock"></i> Disciplina </span>
+            </div>
+          </div>
+        </header>
+        <div class="entry-content">
+          <p>
+            Finalizei os ajustes de CSS e revisão de conteúdo Adicionei uma
+            seção resumida com dados curriculares Preparei os arquivos para
+            deploy enviado a plataforma talks para analise.
+          </p>
+          <br />
+          <p>
+            Lição do dia: Comece a semana com propósito. Cada pequeno ajuste te
+            aproxima do resultado que você sonha.
+          </p>
+        </div>
+        <footer class="entry-footer">
+          <div class="tags">
+            <span class="tag">#Leitura</span>
+            <span class="tag">#Conhecimento</span>
+          </div>
+          <!--      <button class="read-more">
+            Ler mais <i class="fas fa-arrow-right"></i>
+          </button> -->
+        </footer>
+      </article>
+      <!-- Entrada 06/07 -->
+      <article class="journal-entry">
+        <header class="entry-header">
+          <div class="entry-date">
+            <span class="date-day">06</span>
+            <span class="date-month">JUL</span>
+            <span class="date-year">2025</span>
+          </div>
+          <div class="entry-title">
+            <h2>Reflexões Matinais</h2>
+            <div class="entry-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Domingo </span>
+              <span><i class="fas fa-clock"></i> Series </span>
+            </div>
+          </div>
+        </header>
+        <div class="entry-content">
+          <p>
+            Dia tranquilo, ideal para descansar a mente, organizar os
+            pensamentos e aproveitar uma boa série para relaxar e recarregar as
+            energias.
+          </p>
+          <br />
+          <p>
+            Lição do dia: Pausar também é parte do progresso. Cuidar da mente é
+            tão importante quanto correr atrás dos objetivos.
+          </p>
+        </div>
+        <footer class="entry-footer">
+          <div class="tags">
+            <span class="tag">#Leitura</span>
+            <span class="tag">#Conhecimento</span>
+          </div>
+          <!--      <button class="read-more">
+            Ler mais <i class="fas fa-arrow-right"></i>
+          </button> -->
+        </footer>
+      </article>
+      <!-- Entrada 05/07 -->
+      <article class="journal-entry">
+        <header class="entry-header">
+          <div class="entry-date">
+            <span class="date-day">05</span>
+            <span class="date-month">JUL</span>
+            <span class="date-year">2025</span>
+          </div>
+          <div class="entry-title">
+            <h2>Reflexões Matinais</h2>
+            <div class="entry-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Sábado </span>
+              <span><i class="fas fa-clock"></i> Ka Solution </span>
+            </div>
+          </div>
+        </header>
+        <div class="entry-content">
+          <p>
+            Neste sábado, participei do curso Dominando o Microsoft Copilot,
+            promovido pela KA Solution. Foi um dia extremamente produtivo, com
+            conteúdos aprofundados e aprendizados valiosos que pretendo aplicar
+            ao longo de toda a formação.
+          </p>
+          <br />
+          <p>
+            Lição do dia: O conhecimento que adquirimos hoje é a base para as
+            conquistas de amanhã.
+          </p>
+        </div>
+        <footer class="entry-footer">
+          <div class="tags">
+            <span class="tag">#Leitura</span>
+            <span class="tag">#Conhecimento</span>
+          </div>
+          <!--      <button class="read-more">
+            Ler mais <i class="fas fa-arrow-right"></i>
+          </button> -->
+        </footer>
+      </article>
+
+      <!-- Entrada 04/07 -->
+      <article class="journal-entry">
+        <header class="entry-header">
+          <div class="entry-date">
+            <span class="date-day">04</span>
+            <span class="date-month">JUL</span>
+            <span class="date-year">2025</span>
+          </div>
+          <div class="entry-title">
+            <h2>Reflexões Matinais</h2>
+            <div class="entry-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Passos firmes </span>
+              <span><i class="fas fa-clock"></i> Foco essencial </span>
+            </div>
+          </div>
+        </header>
+        <div class="entry-content">
+          <p>
+            Hoje foi um dia bem movimentado no trabalho por causa de novos
+            projetos chegando, mas consegui avançar no meu diário pessoal.
+            Investiguei vários detalhes e melhorei o CSS da página, deixando o
+            layout mais bonito e funcional, conforme as novas funcionalidades
+            foram surgindo.
+          </p>
+          <br />
+          <p>
+            Lição do dia: Aproveite este dia para ajustar o caminho, fortalecer
+            suas escolhas e lembrar: o que começa com propósito sempre termina
+            em resultado.
+          </p>
+        </div>
+        <footer class="entry-footer">
+          <div class="tags">
+            <span class="tag">#Disciplina</span>
+            <span class="tag">#Pratica</span>
+          </div>
+          <!--      <button class="read-more">
+            Ler mais <i class="fas fa-arrow-right"></i>
+          </button> -->
+        </footer>
+      </article>
+      <!-- Entrada 03/07 -->
+      <article class="journal-entry">
+        <header class="entry-header">
+          <div class="entry-date">
+            <span class="date-day">03</span>
+            <span class="date-month">JUL</span>
+            <span class="date-year">2025</span>
+          </div>
+          <div class="entry-title">
+            <h2>Reflexões Matinais</h2>
+            <div class="entry-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Saúde </span>
+              <span><i class="fas fa-clock"></i> Foco y fé </span>
+            </div>
+          </div>
+        </header>
+        <div class="entry-content">
+          <p>
+            Início de dia tranquilo, tudo dentro do esperado. Seguindo com meus
+            estudos, agora é hora de mergulhar no CSS o momento de criar o
+            layout do projeto, dar vida, forma e estilo às ideias. #DevLife
+            #EstudosDeProgramação #CSS #Frontend #Layout
+          </p>
+          <br />
+          <p>
+            Lição do dia: A semana já mostrou desafios e conquistas, mas ainda
+            há tempo para fazer a diferença. Use este dia para ajustar o rumo,
+            fortalecer suas decisões e lembrar: o que começa com propósito
+            termina com resultado.
+          </p>
+        </div>
+        <footer class="entry-footer">
+          <div class="tags">
+            <span class="tag">#Leitura</span>
+            <span class="tag">#Rotina</span>
+            <span class="tag">#Pratica</span>
+          </div>
+          <!--      <button class="read-more">
+            Ler mais <i class="fas fa-arrow-right"></i>
+          </button> -->
+        </footer>
+      </article>
+
+      <!-- Entrada 02/07 -->
+      <article class="journal-entry">
+        <header class="entry-header">
+          <div class="entry-date">
+            <span class="date-day">02</span>
+            <span class="date-month">JUL</span>
+            <span class="date-year">2025</span>
+          </div>
+          <div class="entry-title">
+            <h2>Reflexões Matinais</h2>
+            <div class="entry-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Amanhecer</span>
+              <span><i class="fas fa-clock"></i> Foco y fé</span>
+            </div>
+          </div>
+        </header>
+        <div class="entry-content">
+          <p>
+            Inicio de dia tranquilo, nada além do normal, continuando com meu
+            estudo e terminar o desenha da minha estrutura html do meu diário
+            pessoal. Bastante confuso mas esta saindo primeira fase do meu
+            projeto.
+          </p>
+          <br />
+          <p>
+            Lição do dia: Nem todos os dias serão de grandes conquistas — e está
+            tudo bem. O importante é manter o foco, dar um passo de cada vez e
+            lembrar que constância constrói o que o impulso não sustenta.
+          </p>
+        </div>
+        <footer class="entry-footer">
+          <div class="tags">
+            <span class="tag">#Leitura</span>
+            <span class="tag">#Rotina</span>
+            <span class="tag">#Pratica</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Entrada 01/07 -->
+      <article class="journal-entry">
+        <header class="entry-header">
+          <div class="entry-date">
+            <span class="date-day">01</span>
+            <span class="date-month">JUL</span>
+            <span class="date-year">2025</span>
+          </div>
+          <div class="entry-title">
+            <h2>Trabalho e Estudo</h2>
+            <div class="entry-meta">
+              <span><i class="fas fa-clock"></i> Amanhecer</span>
+              <span><i class="fas fa-clock"></i> trabalho</span>
+              <span><i class="fas fa-clock"></i> estudar</span>
+            </div>
+          </div>
+        </header>
+        <div class="entry-content">
+          <p>
+            Depois de uma boa noite de sono, cheguei ao trabalho e iniciei os
+            controles diários do sistema. Com tudo em ordem, voltei a investigar
+            referências para o meu projeto. E enfim, encontrei o modelo ideal!
+            Agora é hora de partir para a criação da estrutura e dos modelos em
+            HTML, direto no VSCode.
+          </p>
+          <br />
+          <p>
+            Lição do dia: Não se desespere. Beba um copo d'água, dê uma
+            caminhada, acalme a mente. O que não puder ser resolvido hoje,
+            talvez se resolva amanhã. Confie no processo.
+          </p>
+        </div>
+        <footer class="entry-footer">
+          <div class="tags">
+            <span class="tag">#Café</span>
+            <span class="tag">#Tranquilidade</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Entrada 30/06 -->
+      <article class="journal-entry">
+        <header class="entry-header">
+          <div class="entry-date">
+            <span class="date-day">30</span>
+            <span class="date-month">JUN</span>
+            <span class="date-year">2025</span>
+          </div>
+          <div class="entry-title">
+            <h2>Projeto Inicial Criando meu Diário em Html</h2>
+            <div class="entry-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Casa</span>
+              <span><i class="fas fa-clock"></i> Noite</span>
+            </div>
+          </div>
+        </header>
+        <div class="entry-content">
+          <p>
+            Primeiro dia, investigando modelos de diários em html, buscando
+            modelos que me agrede tenha tons leves e naturais de boa
+            visibilidade.
+          </p>
+          <br />
+          <p>
+            Lição do dia: Todo grande projeto começa com uma mente clara e
+            descansada. Antes de criar, é preciso silenciar o ruído e renovar as
+            ideias — porque uma mente cansada não constrói, apenas repete.
+          </p>
+        </div>
+        <footer class="entry-footer">
+          <div class="tags">
+            <span class="tag">#Estudo</span>
+            <span class="tag">#Descanso</span>
+          </div>
+        </footer>
+      </article>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>© 2025 Valmer Mariano • Feito para lembrar que cada dia importa</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/valmer-mariano/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diário Pessoal</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>📘 Meu Diário Pessoal</h1>
+      <p>Escreva seus dias, registre suas ideias.</p>
+    </header>
+
+    <main>
+      <section id="nova-entrada">
+        <h2>✍️ Nova Entrada</h2>
+        <form id="diario-form">
+          <label for="titulo">Título</label>
+          <input
+            type="text"
+            id="titulo"
+            name="titulo"
+            placeholder="Título gerado automaticamente"
+          />
+
+          <label for="mensagem">Texto</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="6"
+            placeholder="Escreva aqui sua entrada..."
+            required
+          ></textarea>
+
+          <button type="submit">Salvar Entrada</button>
+        </form>
+      </section>
+
+      <section id="entradas">
+        <h2>📚 Entradas Salvas</h2>
+        <div id="lista-entradas"></div>
+      </section>
+      <button onclick="limparEntradas()">🗑️ Limpar Todas</button>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 | Feito para organizar minha mente.</p>
+    </footer>
+
+    <script>
+      // Gera o título com data e hora atual
+      function gerarTitulo() {
+        const agora = new Date();
+        const data = agora.toLocaleDateString("pt-BR");
+        const hora = agora.toLocaleTimeString("pt-BR", {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+        return `Entrada de ${data} às ${hora}`;
+      }
+
+      // Atualiza o campo do título com o valor atual
+      function atualizarTituloAutomatico() {
+        document.getElementById("titulo").value = gerarTitulo();
+      }
+
+      // Salva uma entrada no localStorage
+      function salvarEntrada(titulo, mensagem) {
+        const entradas =
+          JSON.parse(localStorage.getItem("diarioEntradas")) || [];
+        entradas.unshift({ titulo, mensagem });
+        localStorage.setItem("diarioEntradas", JSON.stringify(entradas));
+      }
+
+      // Carrega entradas salvas no localStorage
+      function carregarEntradas() {
+        const entradas =
+          JSON.parse(localStorage.getItem("diarioEntradas")) || [];
+        const lista = document.getElementById("lista-entradas");
+        lista.innerHTML = "";
+
+        entradas.forEach((entrada) => {
+          const el = document.createElement("article");
+          el.innerHTML = `
+              <h3>${entrada.titulo}</h3>
+              <p>${entrada.mensagem.replace(/\n/g, "<br>")}</p>
+            `;
+          lista.appendChild(el);
+        });
+      }
+
+      // Evento de envio do formulário
+      document
+        .getElementById("diario-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const titulo = document.getElementById("titulo").value;
+          const mensagem = document.getElementById("mensagem").value.trim();
+
+          if (mensagem === "") return;
+
+          salvarEntrada(titulo, mensagem);
+          carregarEntradas();
+
+          document.getElementById("mensagem").value = "";
+          atualizarTituloAutomatico();
+        });
+
+      // Executa ao carregar a página
+      atualizarTituloAutomatico();
+      carregarEntradas();
+      function limparEntradas() {
+        if (confirm("Tem certeza que deseja apagar todas as entradas?")) {
+          localStorage.removeItem("diarioEntradas");
+          carregarEntradas();
+        }
+      }
+    </script>
+  </body>
+</html>

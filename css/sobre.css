@@ -1,0 +1,149 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Modo escuro - preferências do sistema */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #1a1a1a;
+    --text: #ecf0f1;
+    --light: #bdc3c7; /* Um pouco mais escuro */
+    --bg: #121212; /* Fundo bem escuro */
+    --entry-bg: #1e1e1e; /* Cards escuros */
+    --shadow: rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    --border: #333; /* Bordas escuras */
+  }
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+}
+
+/* Container principal */
+main.conteudo {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Seções */
+main section {
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  color: #004466;
+  border-left: 5px solid #004466;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+section h3 {
+  color: #222;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+section p {
+  margin-top: 10px;
+}
+
+section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+section ul li {
+  margin-bottom: 6px;
+}
+
+/* Links */
+a {
+  color: #006699;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  main section {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.8em;
+    padding: 15px 5px;
+  }
+}
+/* Navegação superior */
+.top-nav {
+  background-color: #004466;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.top-nav .nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.top-nav .nav-link:hover {
+  text-decoration: underline;
+  color: #ccefff;
+}
