@@ -1,4 +1,4 @@
-📓 Meu Diário Digital
+# 📓 Meu Diário Digital
 
 Um projeto pessoal onde registro meu dia a dia, aprendizados e reflexões. Desenvolvido com HTML e CSS puro, foi minha maneira de praticar front-end enquanto criava algo útil.
 ✨ O que tem aqui?
@@ -10,13 +10,13 @@ Um projeto pessoal onde registro meu dia a dia, aprendizados e reflexões. Desen
 ✔ Ícones – Tornando visualmente mais amigável
 🛠 Tecnologias simples
 
-    HTML semântico
+- HTML semântico
 
-    CSS flexbox/grid
+- CSS flexbox/grid
 
-    Font Awesome (ícones)
+- Font Awesome (ícones)
 
-    Google Fonts (tipografia bonita)
+- Google Fonts (tipografia bonita)
 
 🌱 Por que fiz isso?
 
